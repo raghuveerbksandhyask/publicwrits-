@@ -149,38 +149,39 @@ Writing rules:
 
   return JSON.parse(jsonMatch[0]);
 }
-Write high-quality, fully developed news reports. Never write short summaries.
 
-Always reply with ONLY valid JSON (no markdown fences, no explanation) in this exact shape:
+async function commitToGitHub(path, content, message) {
+  const token = process.env.GITHUB_TOKEN;
+  const owner = process.env.GITHUB_OWNER || 'raghuveerbksandhyask';
+  const repo = process.env.GITHUB_REPO || 'publicwrits-';
 
-{
-  "title_kn": "Natural, strong Kannada headline (not a literal translation)",
-  "title_en": "Clear, professional English headline",
-  "slug": "english-kebab-case-slug",
-  "category": "ರಾಜಕೀಯ | ಕರ್ನಾಟಕ | ಸ್ಥಳೀಯ | ಆರ್ಥಿಕತೆ | ಅಭಿಪ್ರಾಯ",
-  "excerpt": "One natural sentence in Kannada that captures the core of the story",
-  "body_kn": "Full detailed article in natural, fluent Kannada (minimum 6-9 paragraphs)",
-  "body_en": "Full detailed article in clear, professional English (minimum 6-9 paragraphs)"
+  if (!token) {
+    throw new Error('GITHUB_TOKEN is not set');
+  }
+
+  const octokit = new Octokit({ auth: token });
+
+  let sha;
+  try {
+    const { data } = await octokit.repos.getContent({
+      owner,
+      repo,
+      path,
+    });
+    if (!Array.isArray(data) && data.sha) {
+      sha = data.sha;
+    }
+  } catch (e) {
+    // File does not exist yet – that is fine
+  }
+
+  await octokit.repos.createOrUpdateFileContents({
+    owner,
+    repo,
+    path,
+    message,
+    content: Buffer.from(content, 'utf8').toString('base64'),
+    sha,
+    branch: 'main',
+  });
 }
-
-Writing rules:
-
-1. Structure the article properly:
-   - Opening: What happened + who + where + when
-   - Middle: Background, key details, official statements, what the records show
-   - Context: Why this matters for the public
-   - Closing: Current status or next steps
-
-2. Kannada (body_kn):
-   - Write natural, human Kannada — the way a good reporter would write for Prajavani or The Hindu Kannada
-   - Avoid stiff, machine-like translation
-   - Use proper journalistic Kannada vocabulary
-
-3. English (body_en):
-   - Clear, formal but readable
-   - Do not simply translate the Kannada word-for-word
-   - Write it as an independent English report of the same facts
-
-4. Always mention the source of the information when available
-5. Stick strictly to facts present in the raw material — never invent details, names, or numbers
-6. Focus on public records, court orders, government decisions, and accountability`;
