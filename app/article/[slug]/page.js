@@ -1,13 +1,12 @@
 'use client';
 
-import { use } from 'react';
+import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
 import Masthead from '../../../components/Masthead';
 import Footer from '../../../components/Footer';
 import { RelatedCard } from '../../../components/ArticleCard';
 import { useLang, t } from '../../../lib/lang-context';
 import { strings } from '../../../lib/strings';
-import { getArticleBySlug, getRelated } from '../../../lib/articles';
 
 function formatDate(dateStr, lang) {
   const d = new Date(dateStr);
@@ -23,7 +22,19 @@ function formatDate(dateStr, lang) {
 export default function ArticlePage({ params }) {
   const { slug } = use(params);
   const { lang } = useLang();
-  const article = getArticleBySlug(slug);
+  const [article, setArticle] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!slug) return;
+    fetch(`/api/articles?slug=${slug}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && !data.error) setArticle(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, [slug]);
 
   if (!article) {
     return (
