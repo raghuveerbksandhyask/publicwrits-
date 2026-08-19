@@ -1,42 +1,44 @@
 ---
-title: "ನರ್ಸಿಂಗ್ ವಿದ್ಯಾರ್ಥಿನಿ ಆತ್ಮಹತ್ಯೆ: ವಿವಾಹಿತನ ವಿರುದ್ಧದ ಪ್ರಕರಣ ರದ್ದು ಮಾಡಲು ಹೈಕೋರ್ಟ್ ನಿರಾಕರಿಸಿದೆ"
-title_en: "Karnataka High Court Refuses to Quash Case Against Married Man Accused of Abetting Nursing Student's Suicide"
+title: "ವಿವಾಹಿತನ ವಿರುದ್ಧ ಆತ್ಮಹತ್ಯೆ ಪ್ರೇರೇಪಣೆ ಪ್ರಕರಣ ರದ್ದು ಮಾಡಲು ಹೈಕೋರ್ಟ್ ನಿರಾಕರಣೆ"
+title_en: "Karnataka High Court Refuses to Quash Case Against Married Man Accused of Abetting Nursing Student’s Suicide"
 slug: karnataka-high-court-refuses-quash-case-married-man-nursing-student-suicide
-date: 2026-08-19T18:51:32.628Z
+date: 2026-08-19T18:56:52.648Z
 category: ಕರ್ನಾಟಕ
-docket: PW/2026/222053
+docket: PW/2026/568563
 bureau: ಬೆಂಗಳೂರು ಬ್ಯೂರೋ
-excerpt: "ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್ 22 ವರ್ಷದ ನರ್ಸಿಂಗ್ ವಿದ್ಯಾರ್ಥಿನಿ ಆತ್ಮಹತ್ಯೆಗೆ ಸಹಾಯ ಮಾಡಿದ ಆರೋಪದ ವಿವಾಹಿತ ವ್ಯಕ್ತಿಯ ವಿರುದ್ಧದ ಕ್ರಿಮಿನಲ್ ಪ್ರಕ್ರಿಯೆ ರದ್ದುಗೊಳಿಸಲು ನಿರಾಕರಿಸಿದೆ."
+excerpt: "ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್ ವಿವಾಹಿತ ವ್ಯಕ್ತಿಯ ವಿರುದ್ಧ 22 ವರ್ಷದ ನರ್ಸಿಂಗ್ ವಿದ್ಯಾರ್ಥಿನಿ ಆತ್ಮಹತ್ಯೆಗೆ ಪ್ರೇರೇಪಿಸಿದ ಆರೋಪದ ಪ್ರಕರಣ ರದ್ದುಗೊಳಿಸಲು ನಿರಾಕರಿಸಿದೆ."
 ---
 
-ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್ ವಿವಾಹಿತನೊಬ್ಬನ ವಿರುದ್ಧದ ಕ್ರಿಮಿನಲ್ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ರದ್ದುಗೊಳಿಸಲು ನಿರಾಕರಿಸಿದೆ. ಆತ 22 ವರ್ಷದ ನರ್ಸಿಂಗ್ ವಿದ್ಯಾರ್ಥಿನಿಯ ಆತ್ಮಹತ್ಯೆಗೆ ಸಹಾಯ ಮಾಡಿದ ಆರೋಪಕ್ಕೆ ಒಳಗಾಗಿದ್ದಾನೆ. ನ್ಯಾಯಾಲಯವು ಈ ನಿರ್ಧಾರವನ್ನು ಬುಧವಾರ ಘೋಷಿಸಿದೆ.
+ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್ ವಿವಾಹಿತ ವ್ಯಕ್ತಿಯ ವಿರುದ್ಧ ನಡೆಯುತ್ತಿರುವ ಕ್ರಿಮಿನಲ್ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ರದ್ದುಗೊಳಿಸಲು ನಿರಾಕರಿಸಿದೆ. ಆರೋಪಿಯು 22 ವರ್ಷದ ಮಹಿಳೆಯ ಆತ್ಮಹತ್ಯೆಗೆ ಪ್ರೇರೇಪಿಸಿದ್ದಾನೆ ಎಂಬ ಆರೋಪವಿದೆ. ಈ ಮಹಿಳೆ ನರ್ಸಿಂಗ್ ವಿದ್ಯಾರ್ಥಿನಿಯಾಗಿದ್ದಳು.
 
-ಆರೋಪಿಯು ಪದೇ ಪದೇ ಬೆನ್ನಟ್ಟುವುದು ಮತ್ತು ಬೆದರಿಕೆ ಹಾಕುವುದು ಎಂದು ಆರೋಪಿಸಲಾಗಿದೆ. ಅವನು ಮಹಿಳೆಯ ಮದುವೆಯ ಸಾಧ್ಯತೆಗಳನ್ನು ಹಾಳುಮಾಡಿದ್ದಾನೆ ಎಂದು ಹೇಳಲಾಗಿದೆ. ಇದಕ್ಕಾಗಿ ಅವನು ಸಂಭಾವ್ಯ ವರರಿಗೆ ತಾನು ಅವಳೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿದ್ದೇನೆ ಎಂದು ಹೇಳಿದ್ದಾನೆ ಎಂಬ ಆರೋಪವಿದೆ.
+ಆರೋಪಗಳ ಪ್ರಕಾರ ಆರೋಪಿಯು ಮಹಿಳೆಯನ್ನು ಪದೇ ಪದೇ ಹಿಂಬಾಲಿಸುತ್ತಿದ್ದ ಮತ್ತು ಬೆದರಿಕೆ ಹಾಕುತ್ತಿದ್ದನು. ಅವಳ ಮದುವೆಯ ಸಾಧ್ಯತೆಗಳನ್ನು ಹಾಳುಮಾಡುವ ಪ್ರಯತ್ನ ಮಾಡಿದ್ದಾನೆ ಎಂದು ಆರೋಪಿಸಲಾಗಿದೆ. ಭವಿಷ್ಯದ ವರನ ಹುಡುಕುವವರಿಗೆ ತಾನು ಅವಳೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿದ್ದೇನೆ ಎಂದು ಹೇಳುತ್ತಿದ್ದನು.
 
-ಹೈಕೋರ್ಟ್ ಈ ಪ್ರಕರಣದಲ್ಲಿ ಆರೋಪಿಯ ವಿರುದ್ಧದ ಆರೋಪಗಳನ್ನು ಗಂಭೀರವಾಗಿ ಪರಿಗಣಿಸಿದೆ. ಕ್ರಿಮಿನಲ್ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ಮುಂದುವರಿಸುವುದು ಸೂಕ್ತ ಎಂದು ನ್ಯಾಯಾಲಯ ತೀರ್ಮಾನಿಸಿದೆ. ಈ ನಿರ್ಧಾರವು ಸಾರ್ವಜನಿಕ ದಾಖಲೆಗಳ ಆಧಾರದ ಮೇಲೆ ಇದೆ.
+ಈ ನಿರ್ಧಾರವು ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್‌ನಿಂದ ಬಂದಿದೆ. ದಿ ಹಿಂದೂ ಕರ್ನಾಟಕ ವರದಿ ಮಾಡಿದೆ. ಪ್ರಕರಣವು ಈಗಲೂ ಮುಂದುವರಿಯುತ್ತದೆ.
 
-ದಿ ಹಿಂದೂ ಕರ್ನಾಟಕ ಪ್ರಕಾರ ಈ ಪ್ರಕರಣವು ಕರ್ನಾಟಕ ಹೈಕೋರ್ಟ್‌ನಲ್ಲಿ ವಿಚಾರಣೆಗೆ ಬಂದಿತ್ತು. ಆಗಸ್ಟ್ 19 2026 ರಂದು ಈ ಆದೇಶ ಹೊರಬಂದಿದೆ. ನ್ಯಾಯಾಲಯವು ಆರೋಪಿಯ ಅರ್ಜಿಯನ್ನು ತಿರಸ್ಕರಿಸಿದೆ.
+ಆರೋಪಿಯು ವಿವಾಹಿತನಾಗಿದ್ದು ಈ ಘಟನೆಯು ಸಾರ್ವಜನಿಕ ದಾಖಲೆಗಳಲ್ಲಿ ದಾಖಲಾಗಿದೆ. ನ್ಯಾಯಾಂಗದ ಪಾರದರ್ಶಕತೆಗೆ ಈ ರೀತಿಯ ನಿರ್ಧಾರಗಳು ಮುಖ್ಯವಾಗಿವೆ.
 
-ಈ ನಿರ್ಧಾರವು ಮಹಿಳೆಯರ ವಿರುದ್ಧದ ಕಿರುಕುಳ ಪ್ರಕರಣಗಳಲ್ಲಿ ನ್ಯಾಯಾಂಗದ ನಿಲುವನ್ನು ಸ್ಪಷ್ಟಪಡಿಸುತ್ತದೆ. ಸಾರ್ವಜನಿಕ ಜವಾಬ್ದಾರಿಯನ್ನು ಖಚಿತಪಡಿಸುವಲ್ಲಿ ನ್ಯಾಯಾಲಯದ ಪಾತ್ರ ಮುಖ್ಯವಾಗಿದೆ. ಆರೋಪಿಯು ಮದುವೆಯಾದ ವ್ಯಕ್ತಿ ಎಂಬ ಅಂಶವನ್ನು ನ್ಯಾಯಾಲಯ ಗಮನಿಸಿದೆ.
+ಆತ್ಮಹತ್ಯೆ ಪ್ರೇರೇಪಣೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಕರಣಗಳಲ್ಲಿ ನ್ಯಾಯಾಲಯಗಳು ಎಚ್ಚರಿಕೆಯಿಂದ ವರ್ತಿಸುತ್ತವೆ. ಈ ನಿರ್ಧಾರವು ಅಂತಹ ಪ್ರಕರಣಗಳಲ್ಲಿ ಮುಂದುವರಿಯುವ ಸೂಚನೆ ನೀಡುತ್ತದೆ.
 
-ಪ್ರಕರಣವು ಈಗ ಕೆಳ ನ್ಯಾಯಾಲಯದಲ್ಲಿ ಮುಂದುವರಿಯಲಿದೆ. ಆರೋಪಿಯ ವಿರುದ್ಧದ ತನಿಖೆ ಮತ್ತು ವಿಚಾರಣೆಗಳು ಮುಂದುವರಿಯುತ್ತವೆ. ಇದು ಸಾರ್ವಜನಿಕ ದಾಖಲೆಗಳಲ್ಲಿ ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯ ಆಧಾರದಲ್ಲಿದೆ.
+ಸಾರ್ವಜನಿಕ ದಾಖಲೆಗಳು ಮತ್ತು ನ್ಯಾಯಾಂಗದ ಜವಾಬ್ದಾರಿಯ ಬಗ್ಗೆ ಈ ಘಟನೆ ಮಹತ್ವ ಪಡೆದಿದೆ. ಮಾಹಿತಿ ಮೂಲ ದಿ ಹಿಂದೂ ಕರ್ನಾಟಕ.
 
-ಈ ಘಟನೆಯು ಕರ್ನಾಟಕದಲ್ಲಿ ಮಹಿಳೆಯರ ಸುರಕ್ಷತೆ ಮತ್ತು ನ್ಯಾಯಾಂಗ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಚರ್ಚೆಗೆ ಕಾರಣವಾಗಿದೆ. ನ್ಯಾಯಾಲಯದ ಆದೇಶವು ಆರೋಪಿಯ ವಿರುದ್ಧದ ಕ್ರಮಗಳನ್ನು ಬಲಪಡಿಸುತ್ತದೆ.
+ಪ್ರಕರಣದ ಮುಂದಿನ ಹಂತಗಳು ನ್ಯಾಯಾಲಯದಲ್ಲಿ ಮುಂದುವರಿಯುತ್ತವೆ. ಈ ನಿರ್ಧಾರವು ಆಗಸ್ಟ್ 2026ರಲ್ಲಿ ಪ್ರಕಟವಾಗಿದೆ.
 
 ---
 
 **English version**
 
-The Karnataka High Court has refused to quash criminal proceedings against a married man accused of abetting the suicide of a 22-year-old nursing student. The court delivered this order on Wednesday after examining the petition filed by the accused. The decision keeps the case active for further proceedings in the lower court.
+The Karnataka High Court has refused to quash criminal proceedings against a married man accused of abetting the suicide of a 22-year-old nursing student. The accusations include repeated stalking and threats against the woman, along with efforts to sabotage her marriage prospects.
 
-According to the accusations, the man repeatedly stalked and threatened the woman. He also allegedly sabotaged her marriage prospects by informing prospective grooms that he was in a relationship with her. These details form the basis of the criminal case that the High Court has allowed to continue.
+According to the case details, the accused allegedly told prospective grooms that he was in a relationship with the victim. This conduct is said to have contributed to the circumstances leading to her suicide.
 
-The High Court found no grounds to interfere with the ongoing criminal proceedings. It noted that the allegations involve serious claims of abetment to suicide. The bench therefore declined to quash the case at this stage.
+The decision comes from the High Court of Karnataka and was reported by The Hindu Karnataka. The proceedings against the accused will now continue in the appropriate court.
 
-The Hindu Karnataka reported the order dated August 19 2026. The publication cited court records showing that the accused is a married individual facing charges under relevant sections of the Indian Penal Code. No names were disclosed in the public order summary.
+The victim was a 22-year-old nursing student at the time of the incident. The accused is described as a married man in the court records.
 
-This ruling underscores the judiciary's approach to cases involving harassment and threats against women. It highlights the importance of allowing full investigation and trial in matters of alleged abetment. Public records indicate the case originated from complaints filed by the victim's family.
+Such refusals to quash cases highlight the judiciary’s approach to matters involving allegations of abetment to suicide. Public records of these decisions support greater transparency in the legal process.
 
-The matter will now proceed in the trial court where evidence will be examined. The accused retains the right to defend himself during the trial process. The High Court's refusal maintains the status of the criminal proceedings.
+The information is sourced directly from The Hindu Karnataka, published on August 19, 2026. This reporting focuses on court orders and government accountability in Karnataka.
 
-The decision has drawn attention to issues of accountability in stalking and harassment cases in Karnataka. It reinforces the principle that courts will scrutinize petitions seeking to quash serious criminal charges. Further updates are expected as the lower court takes up the matter.
+The case remains active following the High Court’s order. No further details on the trial timeline were available in the source material.
+
+This outcome underscores the importance of documented judicial decisions for public awareness regarding accountability in sensitive criminal matters.
