@@ -1,0 +1,19 @@
+{
+  "name": "publicwrits",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rss-parser": "^3.13.0",
+    "cheerio": "^1.0.0",
+    "@octokit/rest": "^21.0.0"
+  }
+}
