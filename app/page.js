@@ -1,18 +1,32 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Masthead from '../components/Masthead';
 import Footer from '../components/Footer';
 import { CategoryCard, NoticeBand } from '../components/ArticleCard';
 import { useLang, t } from '../lib/lang-context';
 import { strings } from '../lib/strings';
-import { getLeadArticle, getSecondaryArticles, articles } from '../lib/articles';
 import { categories } from '../lib/categories';
 
 export default function HomePage() {
   const { lang } = useLang();
-  const lead = getLeadArticle();
-  const secondary = getSecondaryArticles();
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/articles')
+      .then((res) => res.json())
+      .then((data) => {
+        setArticles(Array.isArray(data) ? data : []);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  const lead = articles[0] || null;
+  const secondary = articles.slice(1, 5);
+  ...
 
   const byCategory = (en) => articles.filter((a) => a.category.en === en);
   const categoriesWithContent = categories.filter((c) => byCategory(c.label.en).length > 0);
