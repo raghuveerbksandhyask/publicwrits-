@@ -4,11 +4,10 @@ import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
 import Masthead from '../../../components/Masthead';
 import Footer from '../../../components/Footer';
-import { RelatedCard } from '../../../components/ArticleCard';
 import { useLang, t } from '../../../lib/lang-context';
-import { strings } from '../../../lib/strings';
 
 function formatDate(dateStr, lang) {
+  if (!dateStr) return '';
   const d = new Date(dateStr);
   return d.toLocaleString(lang === 'kn' ? 'kn-IN' : 'en-IN', {
     day: 'numeric',
@@ -36,76 +35,97 @@ export default function ArticlePage({ params }) {
       .catch(() => setLoading(false));
   }, [slug]);
 
-  if (!article) {
+  if (loading) {
     return (
       <>
         <Masthead />
-        <main>
-          <div className="article-page">
-            <p className="kn" style={{ fontSize: 18 }}>
-              {lang === 'kn' ? 'ಈ ಡಾಕೆಟ್ ಕಂಡುಬಂದಿಲ್ಲ.' : 'This docket could not be found.'}
-            </p>
-            <Link href="/" className="back-link">{t(strings.backHome, lang)}</Link>
-          </div>
+        <main style={{ padding: '60px 20px', textAlign: 'center' }}>
+          <p>Loading…</p>
         </main>
         <Footer />
       </>
     );
   }
 
-  const related = getRelated(slug, 3);
+  if (!article) {
+    return (
+      <>
+        <Masthead />
+        <main style={{ padding: '60px 20px', textAlign: 'center' }}>
+          <h1>Article not found</h1>
+          <Link href="/">← Back to home</Link>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  const title = t(article.title, lang);
+  const body = lang === 'kn' ? article.body?.kn : article.body?.en;
+  const excerpt = t(article.excerpt, lang);
 
   return (
     <>
       <Masthead />
-      <main>
-        <div className="article-page">
-          <Link href="/" className="back-link">{t(strings.backHome, lang)}</Link>
+      <main className="shell" style={{ maxWidth: '720px', margin: '0 auto', padding: '24px 16px' }}>
+        <div style={{ marginBottom: '12px' }}>
+          <Link href="/" style={{ fontSize: '14px', color: '#64748b' }}>
+            ← {lang === 'kn' ? 'ಮುಖಪುಟ' : 'Home'}
+          </Link>
+        </div>
 
-          <header className="article-header">
-            <span className="tag">{t(article.tag, lang)}</span>
-            <h1 className="article-title kn">{t(article.title, lang)}</h1>
-            <p className="article-dek">{t(article.dek, lang)}</p>
-
-            <div className="article-meta-grid">
-              <div>
-                <span className="label">{t(strings.docketLabel, lang)}</span>
-                <span className="value mono">{article.docket}</span>
-              </div>
-              <div>
-                <span className="label">{t(strings.filedUnder, lang)}</span>
-                <span className="value kn">{t(article.category, lang)}</span>
-              </div>
-              <div>
-                <span className="label">{t(strings.byBureau, lang)}</span>
-                <span className="value kn">{t(article.bureau, lang)}</span>
-              </div>
-              <div>
-                <span className="label">{t(strings.publishedOn, lang)}</span>
-                <span className="value">{formatDate(article.date, lang)}</span>
-              </div>
-            </div>
-          </header>
-
-          <div className="article-body">
-            {article.body.map((para, i) => (
-              <p key={i} className="kn">{t(para, lang)}</p>
-            ))}
-          </div>
-
-          {related.length > 0 && (
-            <section className="related-section">
-              <div className="category-rule">
-                <h2 className="kn-display">{t(strings.relatedStories, lang)}</h2>
-                <div className="line" />
-              </div>
-              <div className="related-grid">
-                {related.map((r) => (
-                  <RelatedCard key={r.slug} article={r} />
-                ))}
-              </div>
-            </section>
+        <div style={{ marginBottom: '8px', fontSize: '13px', color: '#64748b' }}>
+          <span>{article.category}</span>
+          {article.docket && (
+            <>
+              <span> · </span>
+              <span>{article.docket}</span>
+            </>
           )}
+        </div>
+
+        <h1
+          className="kn"
+          style={{
+            fontSize: '28px',
+            lineHeight: 1.35,
+            fontWeight: 700,
+            margin: '0 0 16px',
+          }}
+        >
+          {title}
+        </h1>
+
+        {excerpt && (
+          <p style={{ fontSize: '17px', color: '#475569', marginBottom: '20px' }}>
+            {excerpt}
+          </p>
+        )}
+
+        <div
+          style={{
+            fontSize: '13px',
+            color: '#64748b',
+            marginBottom: '28px',
+            display: 'flex',
+            gap: '8px',
+            flexWrap: 'wrap',
+          }}
+        >
+          <span>{article.bureau}</span>
+          <span>·</span>
+          <span>{formatDate(article.date, lang)}</span>
+        </div>
+
+        <div
+          className="kn"
+          style={{
+            fontSize: '17px',
+            lineHeight: 1.75,
+            whiteSpace: 'pre-wrap',
+          }}
+        >
+          {body || 'No content available.'}
         </div>
       </main>
       <Footer />
