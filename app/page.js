@@ -27,7 +27,7 @@ export default function HomePage() {
   const lead = articles[0] || null;
   const secondary = articles.slice(1, 5);
 
-  const byCategory = (en) => articles.filter((a) => a.category.en === en);
+  const byCategory = (en) => articles.filter((a) => a.category?.en === en || a.category === en);
   const categoriesWithContent = categories.filter((c) => byCategory(c.label.en).length > 0);
 
   return (
