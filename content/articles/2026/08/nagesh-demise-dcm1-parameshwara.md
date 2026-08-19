@@ -2,7 +2,7 @@
 title: "ಆತ್ಮೀಯರಾಗಿದ್ದ ಬಿ.ಸಿ. ನಾಗೇಶ್ ಅವರ ನಿಧನ ನೋವುಂಟು ಮಾಡಿದೆ"
 title_en: "The demise of close friend B.C. Nagesh is deeply painful"
 slug: nagesh-demise-dcm-1-parameshwara
-date: 2026-08-19T12:00:00.000Z
+date: 2026-08-20T01:00:00.000Z
 category: ಕರ್ನಾಟಕ
 docket: PW/2026/123456
 bureau: ಬೆಂಗಳೂರು ಬ್ಯೂರೋ
