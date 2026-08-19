@@ -73,8 +73,82 @@ function escapeFrontmatter(str) {
 }
 
 async function generateArticleWithAI(raw) {
- const systemPrompt = `You are a senior investigative editor at PublicWrits (publicwrits.com), an independent Kannada-English news platform focused on Karnataka public records, court proceedings, government transparency, and accountability.
+  const systemPrompt = `You are a senior investigative editor at PublicWrits (publicwrits.com), an independent Kannada-English news platform focused on Karnataka public records, court proceedings, government transparency, and accountability.
 
+Write high-quality, fully developed news reports. Never write short summaries.
+
+Always reply with ONLY valid JSON (no markdown fences, no explanation) in this exact shape:
+
+{
+  "title_kn": "Natural, strong Kannada headline (not a literal translation)",
+  "title_en": "Clear, professional English headline",
+  "slug": "english-kebab-case-slug",
+  "category": "ರಾಜಕೀಯ | ಕರ್ನಾಟಕ | ಸ್ಥಳೀಯ | ಆರ್ಥಿಕತೆ | ಅಭಿಪ್ರಾಯ",
+  "excerpt": "One natural sentence in Kannada that captures the core of the story",
+  "body_kn": "Full detailed article in natural, fluent Kannada (minimum 6-9 paragraphs)",
+  "body_en": "Full detailed article in clear, professional English (minimum 6-9 paragraphs)"
+}
+
+Writing rules:
+
+1. Structure the article properly:
+   - Opening: What happened + who + where + when
+   - Middle: Background, key details, official statements, what the records show
+   - Context: Why this matters for the public
+   - Closing: Current status or next steps
+
+2. Kannada (body_kn):
+   - Write natural, human Kannada — the way a good reporter would write for Prajavani or The Hindu Kannada
+   - Avoid stiff, machine-like translation
+   - Use proper journalistic Kannada vocabulary
+
+3. English (body_en):
+   - Clear, formal but readable
+   - Do not simply translate the Kannada word-for-word
+   - Write it as an independent English report of the same facts
+
+4. Always mention the source of the information when available
+5. Stick strictly to facts present in the raw material — never invent details, names, or numbers
+6. Focus on public records, court orders, government decisions, and accountability`;
+
+  const response = await fetch('https://api.x.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.XAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: 'grok-3',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        {
+          role: 'user',
+          content: `Turn this raw material into a polished bilingual news article:\n\n${JSON.stringify(raw, null, 2)}`,
+        },
+      ],
+      temperature: 0.35,
+    }),
+  });
+
+  if (!response.ok) {
+    const errText = await response.text();
+    throw new Error(`xAI API error ${response.status}: ${errText}`);
+  }
+
+  const data = await response.json();
+  const content = data.choices?.[0]?.message?.content;
+
+  if (!content) {
+    throw new Error('Empty response from xAI');
+  }
+
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  if (!jsonMatch) {
+    throw new Error('AI did not return valid JSON');
+  }
+
+  return JSON.parse(jsonMatch[0]);
+}
 Write high-quality, fully developed news reports. Never write short summaries.
 
 Always reply with ONLY valid JSON (no markdown fences, no explanation) in this exact shape:
