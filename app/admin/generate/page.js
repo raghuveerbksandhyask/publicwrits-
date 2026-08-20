@@ -136,7 +136,6 @@ export default function AdminGeneratePage() {
         )}
       </div>
 
-      {/* Drafts list */}
       <div style={{
         marginTop: '28px',
         background: '#fff',
@@ -199,58 +198,6 @@ export default function AdminGeneratePage() {
             </div>
           </div>
         ))}
-      </div>
-    </div>
-  );
-                }            marginTop: '20px',
-            padding: '12px',
-            border: 'none',
-            borderRadius: '8px',
-            background: status === 'loading' ? '#94a3b8' : '#2563eb',
-            color: 'white',
-            fontSize: '15px',
-            fontWeight: 600,
-            cursor: status === 'loading' ? 'not-allowed' : 'pointer',
-          }}
-        >
-          {status === 'loading' ? 'Generating…' : 'Generate New Article'}
-        </button>
-
-        {message && (
-          <div
-            style={{
-              marginTop: '16px',
-              padding: '12px 14px',
-              borderRadius: '8px',
-              fontSize: '14px',
-              background:
-                status === 'success'
-                  ? '#f0fdf4'
-                  : status === 'error'
-                  ? '#fef2f2'
-                  : '#eff6ff',
-              color:
-                status === 'success'
-                  ? '#166534'
-                  : status === 'error'
-                  ? '#991b1b'
-                  : '#1e40af',
-            }}
-          >
-            {message}
-          </div>
-        )}
-
-        <p
-          style={{
-            marginTop: '24px',
-            fontSize: '12px',
-            color: '#94a3b8',
-            textAlign: 'center',
-          }}
-        >
-          This uses the same pipeline as the every-2-hour cron job.
-        </p>
       </div>
     </div>
   );
