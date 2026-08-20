@@ -28,6 +28,7 @@ export async function GET(req) {
     const date = new Date();
     const year = date.getFullYear();
     const filePath = `content/drafts/${slug}.md`;
+    const docketNumber = `PW/\( {year}/ \){String(Math.floor(Math.random() * 900000) + 100000)}`;
 
     const markdown = `---
 title: "${escapeFrontmatter(article.title_kn)}"
@@ -35,7 +36,7 @@ title_en: "${escapeFrontmatter(article.title_en)}"
 slug: ${slug}
 date: ${date.toISOString()}
 category: ${article.category}
-docket: PW/\( {year}/ \){String(Math.floor(Math.random() * 900000) + 100000)}
+docket: ${docketNumber}
 bureau: ಬೆಂಗಳೂರು ಬ್ಯೂರೋ
 excerpt: "${escapeFrontmatter(article.excerpt)}"
 ---
