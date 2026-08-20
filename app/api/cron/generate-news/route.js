@@ -27,8 +27,7 @@ export async function GET(req) {
     const slug = article.slug;
     const date = new Date();
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const filePath = `content/articles/${year}/${month}/${slug}.md`;
+    const filePath = `content/drafts/${slug}.md`;
 
     const markdown = `---
 title: "${escapeFrontmatter(article.title_kn)}"
@@ -36,7 +35,7 @@ title_en: "${escapeFrontmatter(article.title_en)}"
 slug: ${slug}
 date: ${date.toISOString()}
 category: ${article.category}
-docket: PW/${year}/${String(Math.floor(Math.random() * 900000) + 100000)}
+docket: PW/\( {year}/ \){String(Math.floor(Math.random() * 900000) + 100000)}
 bureau: ಬೆಂಗಳೂರು ಬ್ಯೂರೋ
 excerpt: "${escapeFrontmatter(article.excerpt)}"
 ---
@@ -50,13 +49,14 @@ ${article.body_kn}
 ${article.body_en}
 `;
 
-    await commitToGitHub(filePath, markdown, `Auto: ${article.title_en}`);
+    await commitToGitHub(filePath, markdown, `Draft: ${article.title_en}`);
 
     return NextResponse.json({
       success: true,
       slug,
       path: filePath,
       title: article.title_en,
+      status: 'draft',
     });
   } catch (error) {
     console.error('[generate-news]', error);
